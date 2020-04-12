@@ -1,0 +1,18 @@
+<!--pages/text/text.wxml-->
+<text>1.基本使用\n</text>
+<text>Hello World\n</text>
+<text>你好小程序\n\n</text>
+
+<text>2.selectable：长按文本选中\n</text>
+<text selectable="{{true}}">Hello WittyWu\n</text>
+<text selectable>Hello WittyWu\n\n</text>
+
+<text>3.space：决定文本空格的大小\n</text>
+<text>Hello WittyWu\n</text>
+<text space="ensp">Hello WittyWu\n</text>
+<text space="emsp">Hello WittyWu\n</text>
+<text space="nbsp">Hello WittyWu\n</text>
+
+<text>4.decode：是否解码文本\n</text>
+<text>5 &gt; 3</text>
+<text decode>5 &gt; 3</text>

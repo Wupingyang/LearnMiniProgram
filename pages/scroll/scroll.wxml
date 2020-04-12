@@ -1,0 +1,17 @@
+<text>1.水平滚动：scroll-x</text>
+<scroll-view class='container1' scroll-x scroll-left>
+  <view class='item1' wx:for='{{10}}'>{{item}}</view>
+</scroll-view>
+
+<text>2.垂直滚动：scroll-y</text>
+<scroll-view class='container2' scroll-y scroll-top>
+  <view class='item2' wx:for='{{10}}'>{{item}}</view>
+</scroll-view>
+
+<text>3.其他补充</text>
+<scroll-view  class='container2' 
+              scroll-y
+              bindscroll='handleScroll'
+              bindscrolltoupper='handleUpper'>
+  <view class='item2' wx:for='{{10}}'>{{item}}</view>
+</scroll-view>

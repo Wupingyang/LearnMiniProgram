@@ -1,0 +1,20 @@
+<text>1.input的基本使用\n</text>
+<input></input>
+
+<text>2.value属性：input中的默认值</text>
+<input value='输入：'></input>
+
+<text>3.type属性：决定键盘类型</text>
+<input type='idcard'></input>
+
+<text>4.password属性：暗文</text>
+<input password></input>
+
+<text>5.placeholder属性：占位文字</text>
+<input placeholder="请输入内容"></input>
+
+<text>6.input绑定事件</text>
+<input  bindinput="handleInput"
+        bindfocus="handleFocus"
+        bindblur="handleBlur">
+</input>

@@ -1,0 +1,23 @@
+<text>1.image的基本使用：占用320x240大小\n</text>
+
+<text>2.src属性：本地地址和远程路径</text>
+<image src='/assets/Lee.jpg'/>
+<image src='https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg'></image>
+
+<text>\n补充：选中相册照片</text>
+<button bindtap='handleChooseAlbum'>选中图片</button>
+<image src='{{imagepath}}'></image>
+
+<text>3.bindload属性：监听图片加载完成\n</text>
+<text>4.lazy-load属性：图片懒加载</text>
+<image  wx:for='{{5}}' 
+        src='https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg' 
+        bindload="handlePicLoad"
+        lazy-load>
+</image>
+
+<text>4.show-menu-by-longpress：长按图片出现识别小程序码菜单</text>
+<image show-menu-by-longpress src='https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg'></image>
+
+<text>5.mode属性：图片缩放、剪裁的模式</text>
+<image src='/assets/Lee.jpg' mode='aspectFit'></image>
