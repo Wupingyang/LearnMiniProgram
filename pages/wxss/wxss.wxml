@@ -1,0 +1,23 @@
+<text>1.设置样式的三种方式\n</text>
+<text>1.1 行内（内联）样式：style\n</text>
+<view style='color: red; font-size: 30px;'>WittyWu</view>
+
+<text>1.2 页内样式：class\n</text>
+<view class='box'>WittyWu</view>
+
+<text>1.3 全局样式：app.wxss中设置\n</text>
+<view class='container'>WittyWu</view>
+
+<text>2.三种设置样式方法作用于同一组件\n</text>
+<view style='backgroundcolor: red' class='con'>WittyWu</view>
+
+<text>3.wxss中的尺寸单位：rpx\n</text>
+<view class='boxPxSize'></view>
+<view class='boxRpxSize'></view>
+<view class='contentPxSize'>PX</view>
+<view class='contentRpxSize'>RPX</view>
+
+<button class='btn'>外联导入样式</button>
+
+<text>\n4.使用官方样式库开发搜索框</text>
+

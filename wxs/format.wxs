@@ -1,0 +1,44 @@
+//价格格式化
+function priceFormat(price, num) {
+  var num = num || 2;
+
+  var f_price = parseFloat(price)
+
+  return f_price.toFixed(num)
+}
+//时间格式化
+function dateFormat(timestamp, format) {
+  if (!format){
+    format = "yyyy-MM-dd hh-mm-ss";
+  }
+  var timestamp = parseInt(timestamp * 1000);
+  var realDate = getDate(timestamp);
+  function timeFormat(num) {
+    return num < 10 ? '0' + num : num;
+  }
+  var date = [
+    ['M+', (realDate.getMonth() + 1)],
+    ['d+', realDate.getDate()],
+    ['h+', realDate.getHours()],
+    ['m+', realDate.getMinutes()],
+    ['s+', realDate.getSeconds()],
+    ['S+', realDate.getMilliseconds()],
+  ] 
+  var reg1 = getRegExp('(y+)', 'i').exec(format);
+  if (reg1) {
+    format = format.replace(reg1[1], (realDate.getFullYear() + '').substring(4 - reg1[1].lenth));
+  }
+  for (var i = 0; i < date.length; i++) {
+    var k = date[i][0];
+    var v = date[i][1];
+    var reg2 = getRegExp("(" + k + ")").exec(format);
+    if (reg2) {
+      format = format.replace(reg2[1], reg2[1].length == 1 ? v : ("00" + v).substring(('' + v).length));
+    }
+  }
+  return format;
+}
+module.exports = {
+  priceFormat: priceFormat,
+  dateFormat: dateFormat
+}

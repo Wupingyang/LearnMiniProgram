@@ -1,0 +1,27 @@
+/* pages/wxss/wxss.wxss */
+@import "./style/box.wxss";
+@import "./style/content.wxss";
+
+.box {
+  color: blue;
+  font-size: 30px;
+}
+.con {
+  background-color: orange;
+}
+/* .boxPxSize {
+  width: 100px;
+  height: 100px;
+  background-color: brown;
+}
+.boxRpxSize {
+  width: 200rpx;
+  height: 200rpx;
+  background-color: purple;
+}
+.contentPxSize {
+  font-size: 50px;
+}
+.contentRpxSize {
+  font-size: 100rpx;
+} */
