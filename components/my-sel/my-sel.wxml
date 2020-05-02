@@ -1,0 +1,2 @@
+<!--components/my-sel/my-sel.wxml-->
+<view>我是组件内计数{{cnt}}</view>
