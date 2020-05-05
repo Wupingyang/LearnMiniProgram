@@ -1,4 +1,3 @@
 <!--pages/home/home.wxml-->
 <text class="title">Hello World</text>
-<button>大按钮</button>
 <button size="mini">小按钮</button>
